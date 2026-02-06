@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Muhammad Ahsan | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+<body>
+    <video autoplay muted loop id="bg-video">
+  <source src="BLACK.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+  <!-- Navigation -->
+<!-- Navigation -->
+<header>
+  <nav class="navbar">
+    <div class="logo">A.W</div>
+    <ul class="nav-links">
+      <li><a href="#home" class="active">HOME</a></li>
+      <li><a href="#about">ABOUT</a></li>
+      <li><a href="#projects">PROJECTS</a></li>
+      <li><a href="#achievements">ACHIEVEMENTS</a></li>
+      <li class="dropdown">
+        <a href="#">CONTACT ▼</a>
+        <ul class="dropdown-content">
+          <li>
+            <a href="https://www.linkedin.com/in/your-profile" target="_blank">
+              <span class="icon-circle"><i class="bx bxl-linkedin"></i></span> LinkedIn
+            </a>
+          </li>
+          <li>
+            <a href="https://wa.me/your-number" target="_blank">
+              <span class="icon-circle"><i class="bx bxl-whatsapp"></i></span> WhatsApp
+            </a>
+          </li>
+          <li>
+            <a href="#contact-page">
+              <span class="icon-circle"><i class="bx bx-envelope"></i></span> Email
+            </a>
+          </li>
+          <li>
+            <a href="https://www.google.com/maps/place/Gujranwala,+Punjab,+Pakistan/" target="_blank"> <!-- leave empty for Google Maps -->
+              <span class="icon-circle"><i class="bx bx-map"></i></span> Location
+            </a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-text">
+      <h1 class="intro">Its</h1>
+      <h1 id="typed-name"></h1>
+      <h3>INNOVATION ENGINEER</h3>
+      <p>
+        As a Computer Science student at GIFT University in Gujranwala, I specialize in search engine optimization and social media account enhancement. I am proficient in Microsoft Office Suite (Word, Excel, PowerPoint) and have a solid foundation in HTML and CSS. Currently, I am expanding my knowledge by learning Java. My work experience includes roles at Buz Tech, Bukhari Foundation, and Lite Computer Tech Limited in Gujranwala, where I developed my technical skills. I am committed to continuous learning and professional growth in the tech field.
+      </p>
+      <a href="#contact" class="btn">Let's meet</a>
+    </div>
+    <div class="hero-image">
+      <img src="AHSANIMG1.jpg" alt="Muhammad Ahsan">
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="about-text">
+      <h1 class="about-heading">About Me</h1>
+      <p>
+        I am a passionate web developer and designer with a strong focus on building modern, functional, and visually appealing websites. My work blends creativity with technical precision, ensuring that every project delivers both style and performance. Over time, I have honed my skills in front‑end development, responsive design, and user experience, while also exploring frameworks and tools that push the boundaries of what the web can do. I believe in continuous learning, collaboration, and transforming ideas into digital experiences that leave a lasting impact.
+      </p>
+      <div class="skills-tag">
+        <span class="icon-circle"><i class="bx bx-code-alt"></i></span>
+        <span class="skills-title">Skills</span>
+      </div>  
+      <div class="skills">
+        <span class="skill-box">HTML</span>
+        <span class="skill-box">CSS</span>
+        <span class="skill-box">BootStrap</span>
+        <span class="skill-box">JavaScript</span>
+        <span class="skill-box">React</span>
+        <span class="skill-box">Node.js</span>
+        <span class="skill-box">Express.js</span>
+        <span class="skill-box">Spring Boot</span>
+        <span class="skill-box">SP/Servlets</span>
+        <span class="skill-box">MySql</span>
+        <span class="skill-box">REST APIs</span>
+        <span class="skill-box">NUMPY & PANDAS</span>
+        <span class="skill-box">Php</span>
+        <span class="skill-box">Dockers</span>
+        <span class="skill-box">Git</span>
+        <span class="skill-box">GitHub</span>
+        <span class="skill-box">Figma</span>
+      </div>
+    </div>
+    <div class="about-image">
+      <img src="AHSANIMG1.jpg" alt="Muhammad Ahsan">
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <h1 class="about-heading">Projects</h1>
+    <div class="projects-grid">
+      <!-- Project 1 -->
+      <div class="project-card" data-project="hospital">
+        <img src="HOSPITAL.jpg" alt="Hospital Management System">
+        <div class="overlay">
+          <button class="btn view-btn">View Project</button>
+          <button class="btn detail-btn">Details</button>
+        </div>
+      </div>
+      <!-- Project 2 -->
+      <div class="project-card" data-project="university">
+        <img src="UNIVERSTY.jpg" alt="University Management System">
+        <div class="overlay">
+          <button class="btn view-btn">View Project</button>
+          <button class="btn detail-btn">Details</button>
+        </div>
+      </div>
+      <!-- Project 3 -->
+      <div class="project-card" data-project="browser">
+        <img src="BROWSER.jpg" alt="Browser/Tab Manager">
+        <div class="overlay">
+          <button class="btn view-btn">View Project</button>
+          <button class="btn detail-btn">Details</button>
+        </div>
+      </div>
+      <!-- Project 4 -->
+      <div class="project-card" data-project="chatbot">
+        <img src="CHATBOT.jpg" alt="Chatbot">
+        <div class="overlay">
+          <button class="btn view-btn">View Project</button>
+          <button class="btn detail-btn">Details</button>
+        </div>
+      </div>
+      <!-- Project 5 -->
+      <div class="project-card" data-project="dashboard">
+        <img src="DATA ANALYTICS.jpg" alt="Data Analytics Dashboard">
+        <div class="overlay">
+          <button class="btn view-btn">View Project</button>
+          <button class="btn detail-btn">Details</button>
+        </div>
+      </div>
+      <!-- Project 6 -->
+      <div class="project-card" data-project="extra">
+        <img src="extra.jpg" alt="Extra Project">
+        <div class="overlay">
+          <button class="btn view-btn">View Project</button>
+          <button class="btn detail-btn">Details</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Project Detail Overlay -->
+  <div id="project-detail" class="project-detail">
+    <div class="detail-content">
+      <h2 id="detail-title"></h2>
+      <p id="detail-description"></p>
+      <button id="close-detail" class="btn">Close</button>
+    </div>
+  </div>
+
+<!-- Achievements Section -->
+<section id="achievements" class="achievements">
+  <h1 class="about-heading">Achievements & Certifications</h1>
+
+  <!-- Degrees -->
+  <div class="degrees">
+    <div class="degree-card">
+      <h2>Higher Secondary School Certificate (HSSC)</h2>
+      <p>Be Superior College, Gujranwala</p>
+      <p>Tenure: <!-- add tenure here --></p>
+      <!-- Add certificate link here -->
+    </div>
+    <div class="degree-card">
+      <h2>Associate Degree</h2>
+      <p>GIFT University, Gujranwala</p>
+      <p>Tenure: <!-- add tenure here --></p>
+      <!-- Add certificate link here -->
+    </div>
+    <div class="degree-card">
+      <h2>Bachelor’s Degree</h2>
+      <p>GIFT University, Gujranwala</p>
+      <p>Tenure: <!-- add tenure here --></p>
+      <!-- Add certificate link here -->
+    </div>
+  </div>
+
+  <!-- Roles / Skills -->
+  <div class="roles">
+    <h2 class="roles-heading">Professional Roles</h2>
+    <div class="roles-grid">
+      <!-- Role 1 -->
+      <div class="role-card">
+        <div class="circle" data-percent="80">
+          <svg>
+            <circle cx="60" cy="60" r="54"></circle>
+            <circle class="bar" cx="60" cy="60" r="54"></circle>
+          </svg>
+          <div class="counter">0%</div>
+        </div>
+        <p>Full‑Stack Developer</p>
+      </div>
+      <!-- Role 2 -->
+      <div class="role-card">
+        <div class="circle" data-percent="80">
+          <svg>
+            <circle cx="60" cy="60" r="54"></circle>
+            <circle class="bar" cx="60" cy="60" r="54"></circle>
+          </svg>
+          <div class="counter">0%</div>
+        </div>
+        <p>Data Analyst</p>
+      </div>
+      <!-- Role 3 -->
+      <div class="role-card">
+        <div class="circle" data-percent="90">
+          <svg>
+            <circle cx="60" cy="60" r="54"></circle>
+            <circle class="bar" cx="60" cy="60" r="54"></circle>
+          </svg>
+          <div class="counter">0%</div>
+        </div>
+        <p>Generative AI Specialist</p>
+      </div>
+      <!-- Role 4 -->
+      <div class="role-card">
+        <div class="circle" data-percent="40">
+          <svg>
+            <circle cx="60" cy="60" r="54"></circle>
+            <circle class="bar" cx="60" cy="60" r="54"></circle>
+          </svg>
+          <div class="counter">0%</div>
+        </div>
+        <p>Cybersecurity Analyst</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Certifications Section -->
+<section id="certifications" class="certifications">
+  <h1 class="about-heading">Certifications</h1>
+  <div class="cert-grid">
+    <!-- Full-Stack Development -->
+    <div class="cert-card">
+      <h2>Full‑Stack Development Certificate</h2>
+      <p> Online Platform</p>
+      <a href="https://www.coursera.org/account/accomplishments/specialization/KF7ZZ604H5NT" target="_blank" class="btn">View Certificate</a>
+    </div>
+    <!-- Cybersecurity -->
+    <div class="cert-card">
+      <h2>Cybersecurity Analyst Certificate</h2>
+      <p> Online Platform</p>
+      <a href="https://www.coursera.org/account/accomplishments/professional-cert/97UCKK77MI6L" target="_blank" class="btn">View Certificate</a>
+    </div>
+    <!-- Generative AI -->
+    <div class="cert-card">
+      <h2>Generative AI Specialist Certificate</h2>
+      <p> Online Platform</p>
+      <a href="https://www.coursera.org/account/accomplishments/specialization/U3S5KGFXMUTV" target="_blank" class="btn">View Certificate</a>
+    </div>
+    <!-- Data Analytics -->
+    <div class="cert-card">
+      <h2>Data Analytics Certificate</h2>
+      <p> Online Platform</p>
+      <a href="https://www.coursera.org/account/accomplishments/verify/0BQ8JVOEN29Q" target="_blank" class="btn">View Certificate</a>
+    </div>
+    <!-- Data Analytics -->
+    <div class="cert-card">
+      <h2>English Language Proficiency (Upper Intermediate B2.1)</h2>
+      <p> Online Platform</p>
+      <a href="https://www.coursera.org/account/accomplishments/verify/FJF5RQVS8ZDU" target="_blank" class="btn">View Certificate</a>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Page Section -->
+<section id="contact-page" class="contact-page">
+  <h1 class="about-heading">Get in Touch</h1>
+  <div class="contact-container">
+    <!-- Rating Section -->
+    <div class="rating-box">
+      <h2>Rate My Portfolio</h2>
+      <div class="stars">
+        <i class="bx bx-star"></i>
+        <i class="bx bx-star"></i>
+        <i class="bx bx-star"></i>
+        <i class="bx bx-star"></i>
+      </div>
+    </div>
+
+<!-- Email Form Section -->
+<div class="email-box">
+  <h2>Send Me a Message</h2>
+  <form action="https://formsubmit.co/ahsansofficial8@gmail.com" method="POST">
+    <!-- Hidden inputs for configuration -->
+    <input type="hidden" name="_captcha" value="false"> <!-- disables captcha -->
+    <input type="hidden" name="_next" value="https://yourdomain.com/thank-you.html"> <!-- redirect after submit -->
+
+    <!-- Message textarea -->
+    <textarea name="message" placeholder="Write your message here..." required></textarea>
+
+    <!-- Send button -->
+    <button type="submit" class="btn">Send</button>
+  </form>
+</div>
+
+</section>
+
+<footer class="footer">
+  <div class="footer-content">
+    <p>© 2026 <span style="color: aqua; font-weight: bold;">A.W TECH</span>
+  — All Rights Reserved</p>
+    <ul class="footer-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact-page">Contact</a></li>
+    </ul>
+    <div class="footer-social">
+      <a href="https://www.linkedin.com/in/your-profile" target="_blank"><i class="bx bxl-linkedin"></i></a>
+      <a href="https://wa.me/your-number" target="_blank"><i class="bx bxl-whatsapp"></i></a>
+      <a href="mailto:your-email@example.com"><i class="bx bx-envelope"></i></a>
+      <a href="https://github.com/your-profile" target="_blank"><i class="bx bxl-github"></i></a>
+    </div>
+    <p class="footer-location">Based in Gujranwala, Pakistan</p>
+    <a href="#home" class="back-to-top">↑ Back to Top</a>
+  </div>
+</footer>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
