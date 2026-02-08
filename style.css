@@ -762,3 +762,114 @@ section {
 .footer-links a:hover::after {
   width: 100%;
 }
+
+/* ------------------- Responsive Layer ------------------- */
+
+/* Mobile (up to 600px) */
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+  }
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+  }
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px 15px;
+  }
+  .hero-text {
+    padding: 0;
+  }
+  .hero-image {
+    margin-top: 20px;
+  }
+  .about {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px 15px;
+  }
+  .about-image {
+    margin-top: 20px;
+  }
+  .skills {
+    justify-content: center;
+  }
+  .projects-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+  .project-card {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+  .degrees, .roles-grid, .cert-grid, .contact-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .degree-card, .role-card, .cert-card, .rating-box, .email-box {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+  .footer-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+/* Tablet (601px–1024px) */
+@media (max-width: 1024px) {
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+  }
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
+  }
+  .about {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
+  }
+  .projects-grid, .degrees, .roles-grid, .cert-grid, .contact-container {
+    justify-content: center;
+  }
+  .project-card, .degree-card, .role-card, .cert-card, .rating-box, .email-box {
+    flex: 1 1 45%;
+    max-width: 45%;
+  }
+}
+
+/* Desktop (1025px+) */
+@media (min-width: 1025px) {
+  .navbar {
+    flex-direction: row;
+  }
+  .nav-links {
+    flex-direction: row;
+  }
+  .hero {
+    flex-direction: row;
+    text-align: left;
+  }
+  .about {
+    flex-direction: row;
+    text-align: left;
+  }
+  .projects-grid, .degrees, .roles-grid, .cert-grid, .contact-container {
+    justify-content: space-between;
+  }
+  .project-card, .degree-card, .role-card, .cert-card, .rating-box, .email-box {
+    flex: 1 1 30%;
+    max-width: 30%;
+  }
+}
