@@ -763,33 +763,59 @@ section {
   width: 100%;
 }
 
-/* Mobile-first overrides */
+/* ------------------- Responsive Fixes ------------------- */
+
+/* Mobile (up to 600px) */
 @media (max-width: 600px) {
-  /* Hero: image on top, text below */
+  /* Navbar: hide links, show toggle icon */
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    gap: 15px;
+    background: #111;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 70%;
+    padding: 40px 20px;
+    z-index: 999;
+  }
+  .nav-links.active {
+    display: flex;
+  }
+  .navbar {
+    justify-content: space-between;
+  }
+  .menu-toggle {
+    display: block;
+    font-size: 28px;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  /* Hero: image above text */
   .hero {
     flex-direction: column;
     text-align: center;
     padding: 30px 15px;
   }
   .hero-image {
-    order: -1; /* move image above text */
+    order: -1;
     margin-bottom: 20px;
   }
-  .hero-text {
-    padding: 0;
-  }
   .hero-text .btn {
-    margin-bottom: 50px; /* spacing after button */
+    margin-bottom: 50px;
   }
 
-  /* About: skills first, image last */
+  /* About: skills above image */
   .about {
     flex-direction: column;
     text-align: center;
     padding: 30px 15px;
   }
   .skills {
-    order: -1; /* skills above image */
+    order: -1;
     justify-content: center;
     margin-bottom: 20px;
   }
@@ -807,8 +833,17 @@ section {
     max-width: 100%;
     margin-bottom: 20px;
   }
+  .overlay {
+    height: auto;
+    padding: 15px;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .overlay .btn {
+    width: 100%;
+  }
 
-  /* Achievements & Certifications: stack cards */
+  /* Achievements, Certifications, Contact: stack cards */
   .degrees, .roles-grid, .cert-grid, .contact-container {
     flex-direction: column;
     align-items: center;
@@ -826,8 +861,16 @@ section {
   }
 }
 
-/* Tablet overrides */
+/* Tablet (601px–1024px) */
 @media (max-width: 1024px) {
+  .navbar {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
   .hero, .about {
     flex-direction: column;
     text-align: center;
