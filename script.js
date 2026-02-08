@@ -1,4 +1,4 @@
-// Typing effect for Hero name
+
 const nameText = "AHSAN WARRAICH";
 const typedName = document.getElementById("typed-name");
 let index = 0;
@@ -12,7 +12,7 @@ function typeLetter() {
 }
 typeLetter();
 
-// Project details data
+
 const projectData = {
   hospital: {
     title: "Hospital Management System",
@@ -40,7 +40,7 @@ const projectData = {
   }
 };
 
-// Handle detail button clicks
+
 document.querySelectorAll(".detail-btn").forEach(btn => {
   btn.addEventListener("click", e => {
     const projectKey = e.target.closest(".project-card").dataset.project;
@@ -51,12 +51,12 @@ document.querySelectorAll(".detail-btn").forEach(btn => {
   });
 });
 
-// Close detail overlay
+
 document.getElementById("close-detail").addEventListener("click", () => {
   document.getElementById("project-detail").style.display = "none";
 });
 
-// Animate one circle
+
 function animateCircle(circle) {
   const percent = parseInt(circle.dataset.percent, 10);
   const bar = circle.querySelector(".bar");
@@ -64,7 +64,7 @@ function animateCircle(circle) {
   const radius = bar.getAttribute("r");
   const circumference = 2 * Math.PI * radius;
 
-  // reset
+
   bar.style.strokeDasharray = circumference;
   bar.style.strokeDashoffset = circumference;
   counter.textContent = "0%";
@@ -79,7 +79,7 @@ function animateCircle(circle) {
     } else {
       clearInterval(interval);
     }
-  }, 50); // slower speed for smoother animation
+  }, 50); 
 }
 
 // IntersectionObserver to animate every time section is visible
@@ -104,11 +104,11 @@ if (achievementsSection) {
         });
       }
     });
-  }, { threshold: 0.5 }); // trigger when 50% visible
+  }, { threshold: 0.5 }); 
 
   observer.observe(achievementsSection);
 }
-// Star rating interaction
+
 document.querySelectorAll(".stars i").forEach((star, index, stars) => {
   star.addEventListener("click", () => {
     stars.forEach((s, i) => {
@@ -119,4 +119,11 @@ document.querySelectorAll(".stars i").forEach((star, index, stars) => {
       }
     });
   });
+});
+
+const menuToggle = document.querySelector('.menu-toggle');
+const navLinks = document.querySelector('.nav-links');
+
+menuToggle.addEventListener('click', () => {
+  navLinks.classList.toggle('active');
 });
